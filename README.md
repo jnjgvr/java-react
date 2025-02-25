@@ -1,2 +1,2 @@
-# java-react
-Repositorio con todas las actividades realizadas en el curso
+# java-react (CSS)
+Las diferentes actividades de CSS estaran distribuidas por carpetas dentro de esta rama del repositorio
