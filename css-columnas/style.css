@@ -1,0 +1,20 @@
+html{
+    background-color: azure;
+}
+
+p{
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-width: 2px;
+    column-rule-color: red;
+    column-rule-style: solid;
+}
+
+p::selection{
+    background-color: rgb(113, 179, 226);
+    color: rgb(51, 0, 255);
+}
+
+h1:hover{
+    color: red;
+}
