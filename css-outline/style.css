@@ -1,0 +1,13 @@
+div{
+    display: inline-block;
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    outline: 10px dotted greenyellow;
+    margin: 20px;
+}
+
+div:hover{
+    outline-color: black;
+    outline-offset: 10px;
+}
