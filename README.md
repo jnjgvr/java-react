@@ -1,2 +1,2 @@
-# java-react
-Repositorio con todas las actividades realizadas en el curso
+# java-react (HTML)
+Las diferentes actividades de HTML estaran distribuidas por carpetas dentro de esta rama del repositorio
