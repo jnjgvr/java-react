@@ -1,0 +1,49 @@
+div{
+    background-color: greenyellow;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+}
+
+.div-1{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 20;
+}
+
+.div-2{
+    position: absolute;
+    left: 310px;
+    top: 10px;
+    z-index: 20;
+}
+
+.div-3{
+    position: absolute;
+    left: 10px;
+    top: 310px;
+    z-index: 20;
+}
+
+.div-4{
+    position: absolute;
+    left: 310px;
+    top: 310px;
+    z-index: 20;
+}
+
+.div-5{
+    background-color: red;
+    height: 300px;
+    width: 300px;
+    border-radius: 0;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 10;
+}
