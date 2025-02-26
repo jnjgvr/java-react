@@ -1,0 +1,9 @@
+div{
+    background-color: #aeff32;
+    overflow: auto;
+    height: 150px;
+}
+
+div p:nth-of-type(2) {
+    display: none;
+}
