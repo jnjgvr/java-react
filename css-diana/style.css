@@ -1,0 +1,125 @@
+body{
+    background-color: rgb(185 218 143);
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.div-1{
+    height: 285px;
+    width: 285px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(241,241,241,1) 54%, rgba(208,208,208,1) 100%);
+    box-shadow: 1px -1px rgb(104, 104, 128), inset 1px 1px 2px white, -1px 1px rgb(173, 173, 173);
+}
+
+.linea-vertical{
+    height: 254px;
+    width: 1px;
+    background-color: black;
+    position: relative;
+    top: -112px;
+    left: 15px;
+}
+.linea-horizontal{
+    height: 1px;
+    width: 254px;
+    background-color: black;
+    position: relative;
+    top: -240px;
+    left: -112px;
+}
+
+.div-2 {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    position: relative;
+    background-color: red;
+    top: 15px;
+    left: 15px;
+    border: inset 2px white;
+    outline: inset rgb(255, 255, 255) 1px;
+    outline-offset: -1px;
+    /* box-shadow: inset 5px 5px 5px grey; */
+}
+
+.div-3{
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    background-color: white;
+}
+
+.div-4{
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    background-color: red;
+}
+
+.div-5{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    background-color: white;
+}
+
+.div-6{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    background-color: red;
+}
+
+.div-7{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    background-color: white;
+}
+
+.div-8{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    background-color: red;
+}
+
+.div-9{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    background-color: white;
+}
+
+.div-10{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    background-color: red;
+}
