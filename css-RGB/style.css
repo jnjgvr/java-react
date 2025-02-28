@@ -1,0 +1,42 @@
+h1, h2{
+    text-align: center;
+    font-style: italic;
+}
+
+.flex-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.circulo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.color-rojo{
+    background-color: #fe0000;
+}
+
+.color-verde{
+    background-color: #01ff02;
+}
+
+.color-azul{
+    background-color: #0000fe;
+}
+
+.color-lila{
+    background-color: #ff00fe;
+}
+
+.color-turquesa{
+    background-color: #00feff;
+}
+
+.color-amarillo{
+    background-color: #fdf001;
+}
