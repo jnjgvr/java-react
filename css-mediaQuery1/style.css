@@ -1,0 +1,37 @@
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+}
+
+@media (width < 426px){
+    main{
+        background-color: red;
+    }
+}
+
+@media (426px < width <= 768px){
+    main{
+        background-color: rgb(233, 194, 40);
+    }
+}
+
+
+@media (width > 768px){
+    main{
+        background-color: rgb(138, 250, 27);
+    }
+}
