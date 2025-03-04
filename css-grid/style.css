@@ -1,0 +1,141 @@
+body {
+    background: #f9f9f9;
+    color: white;
+    margin: 0px;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+}
+
+.container div{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    background-color: #0f1629;
+}
+
+.menu{
+    background-color: #f03d4f;
+}
+
+.hero{
+    background-color: #4d84c5;
+}
+
+.main{
+    background-color: #24344b;
+}
+
+.banner{
+    background-color: #ffd06a;
+    color: black;
+}
+
+.extra{
+    background-color: #4ebc97;
+}
+
+.image{
+    background-color: #c1e3e5;
+    color: black;
+}
+
+
+@media (width < 426px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 8vh 8vh 20vh 20vh 15vh 15vh 14vh auto;
+    }
+}
+
+
+@media (width >= 426px) {
+    .container{
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 8vh 13vh 13vh 13vh 13vh 13vh 13vh 13vh;
+    }
+
+    .header{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .hero{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 5;
+    }
+
+    .menu{
+        grid-row-start: 5;
+        grid-row-end: 9;
+    }
+
+    .main{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 7;
+    }
+
+    .banner{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    .extra{
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+}
+
+@media (width > 768px) {
+    .container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 8vh 15vh 15vh 15vh 15vh 15vh 15vh;
+    }
+
+    .header{
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    .menu{
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .hero{
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    .main{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .image{
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+    .extra{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+    .banner{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 7;
+    }
+}
