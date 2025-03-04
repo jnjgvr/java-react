@@ -1,0 +1,222 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu{
+    display: none;
+}
+
+/* Header */
+header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index: 100;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+header nav img{
+    width: 120px;
+    height: 50px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding-right: 20px;
+}
+/* Div con imagen de fondo y texto sobre */
+.bg-image-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background-color: #d8d8d8;
+    height: 600px;
+    /* position: relative; */
+    margin-bottom: 40px;
+    
+    /* background-image: url(../images/landing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.bg-image-text img{
+    width: 100%;
+}
+
+.bg-image-text div{
+    position: absolute;
+    top: 250px;
+}
+
+/* What`s on Spotify? */
+.whats-on-header{
+    text-align: center; 
+}
+
+.whats-on-header h2{
+    display: inline;
+    border-bottom: #00B172 2px solid;
+    padding-bottom: 10px;
+}
+
+.whats-on{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.whats-on div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+}
+
+.whats-on div p{
+    max-width: 150px;
+}
+
+.whats-on h3{
+    color: #00B172;
+}
+
+.whats-on img{
+    width: 80px;
+    height: 80px;
+}
+
+/* SECCION FOOTER VERDE */
+
+.fondo-verde{
+    background-color: #00B172;
+    color: #fff;
+    display: flex;
+    padding: 40px;
+    position: relative;
+    z-index: 10;
+}
+
+.fondo-verde > img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 48%;
+    top: 45%;
+}
+
+.fondo-verde h2{
+    border-bottom: #fff 2px solid;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    width: fit-content;
+}
+
+.seccion1-verde{
+    width: 50%;
+}
+
+.seccion1-verde p{
+    max-width: 70%;
+    margin-bottom: 40px;
+}
+
+.seccion2-verde{
+    width: 50%;
+    display: flex;
+    justify-content: right;
+}
+
+.seccion2-verde img{
+    width: 200px;
+    height: 350px;
+    align-self: center;
+}
+
+/* Media query */
+
+@media(width < 651px){
+    .whats-on{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .fondo-verde{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .seccion1-verde{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .seccion1-verde p{
+        max-width: 80%;
+    }
+    
+    .fondo-verde > img{
+        top: 52%;
+        left: 45%;
+    }
+
+    .seccion2-verde{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .seccion2-verde img{
+        margin-top: 100px;
+    }
+}
+
+@media(width < 426px){
+    header nav ul{
+        display: none;
+    }
+    .menu {
+        position: relative;
+        display: inline-block;
+    }
+
+    .menu-btn {
+        background-color: #ffffff00;
+        color: black;
+        padding: 15px 15px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu ul {
+        display: none;
+        background-color: white;
+        min-width: 40px;
+    }
+
+    .menu:hover ul{
+        display: block;
+        position: absolute;
+        right: 10px;
+    }
+
+}
