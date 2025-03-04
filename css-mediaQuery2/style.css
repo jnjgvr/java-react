@@ -1,7 +1,7 @@
 header nav{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-bottom: 10px;
 }
 
@@ -51,6 +51,10 @@ footer section div{
 
 @media(768px >= width){
 
+    header nav{
+        flex-wrap: wrap;
+    }
+
     header nav div{
         height: 6vh;
         width: 100vw;
@@ -73,10 +77,12 @@ footer section div{
 }
 
 @media(420px >= width){
-
+    footer section{
+        flex-wrap: wrap;
+    }
     footer section div{
         height: 9vh;
-        width: 47vw;
+        width: 44.5vw;
     }
 
 }
