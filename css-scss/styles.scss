@@ -1,0 +1,130 @@
+// 312px breakpoint para cabecera
+$layout-breakpoint-large: 1200px; // width > 1200
+$layout-breakpoint-medium: 992px; // width > 992
+$layout-breakpoint-small: 600px; // width > 600
+
+// START HEADER <--
+*{
+  color: #6a6a6a;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  background: #fff;
+  padding: 0px 10px;
+  border-bottom: 1px solid #a6a6a6;
+
+  nav .top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo img{
+      width: 50px;
+      height: 50px;
+    }
+
+    .search-bar {
+      flex-grow: 1;
+      padding-left: 8px;
+
+      svg{
+        fill: #6a6a6a;
+      }
+
+      input {
+        width: 90%;
+        border: none;
+        &:focus-visible{
+          outline: none;
+        }
+      }
+    }
+
+    .buttons button{
+      background-color: #fff;
+      border: none;
+    }
+
+  }
+
+  nav .bottom-header{
+    display: flex;
+    border-top: 1px solid #a6a6a6;
+    align-items: center;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+
+    div{
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      height: 100%;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    .tag-selected{
+      background-color: #e3e3e3;
+      color: black;
+    }
+
+    .scroll-buttons{
+      position: absolute;
+      background-color: #fff;
+      gap: 8px;
+      right: 0vw;
+      box-shadow: #ffffff -20px 0px 5px;
+
+      img{
+        width: 15px;
+        height: 15px;
+      }
+
+      img:nth-child(2){
+        filter: brightness(0.1);
+      }
+    }
+  }
+}
+
+@media (width < 345px){
+  header nav .search-bar input{
+    width: 80%;
+  }
+
+  .login-btn{
+    display: none;
+  }
+}
+
+//END HEADER -->
+
+@media (width <= $layout-breakpoint-small) {
+  body {
+    background-color: green;
+  }
+}
+
+@media (width > $layout-breakpoint-small) {
+  body {
+    background-color: yellow;
+  }
+}
+
+@media (width > $layout-breakpoint-medium) {
+  body {
+    background-color: red;
+  }
+}
+
+@media (width > $layout-breakpoint-large) {
+  body {
+    background-color: violet;
+  }
+}
