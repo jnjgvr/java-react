@@ -1,59 +1,282 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cabecera con Logo, Navegación y Barra de Búsqueda</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<style>
-
-</style>
 <body>
-  <header>
-    <nav>
-      <div class="top-header">
-        <div class="logo"><img src="images/logo.png" alt="Logo"></div>
-        <div class="search-bar">
-          <svg fill="#000000" height="15px" width="15px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 488.4 488.4" xml:space="preserve">
-            <g>
-              <g>
-                <path d="M0,203.25c0,112.1,91.2,203.2,203.2,203.2c51.6,0,98.8-19.4,134.7-51.2l129.5,129.5c2.4,2.4,5.5,3.6,8.7,3.6
-                   s6.3-1.2,8.7-3.6c4.8-4.8,4.8-12.5,0-17.3l-129.6-129.5c31.8-35.9,51.2-83,51.2-134.7c0-112.1-91.2-203.2-203.2-203.2
-                   S0,91.15,0,203.25z M381.9,203.25c0,98.5-80.2,178.7-178.7,178.7s-178.7-80.2-178.7-178.7s80.2-178.7,178.7-178.7
-                   S381.9,104.65,381.9,203.25z" />
-              </g>
-            </g>
-          </svg>
-          <input type="search" placeholder="Discover...">
-        </div>
-        <div class="buttons">
-          <button>···</button>
-          <button class="login-btn">Login</button>
-        </div>
-      </div>
-      <div class="bottom-header">
-        <div class="nav-container" id="navContainer">
-          <div class="nav-tag tag-selected">Home</div>
-          <div class="nav-tag">Tech</div>
-          <div class="nav-tag">Games</div>
-          <div class="nav-tag">Podcasts</div>
-          <div class="nav-tag">Bots</div>
-          <div class="nav-tag">Developer Tools</div>
-          <div class="nav-tag">iMessage Apps</div>
-          <div class="nav-tag">Phone</div>
-          <div class="nav-tag">Photography Tools</div>
-          <div class="scroll-buttons">
-            <img src="images/arrow-prev.png" alt="flecha anterior">
-            <img src="images/arrow-next.png" alt="flecha siguiente">
+    <header>
+        <nav>
+          <div class="top-header">
+            <div class="logo"><img src="images/logo.png" alt="Logo"></div>
+            <div class="search-bar">
+              <svg fill="#000000" height="15px" width="15px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 488.4 488.4" xml:space="preserve">
+                <g>
+                  <g>
+                    <path d="M0,203.25c0,112.1,91.2,203.2,203.2,203.2c51.6,0,98.8-19.4,134.7-51.2l129.5,129.5c2.4,2.4,5.5,3.6,8.7,3.6
+                       s6.3-1.2,8.7-3.6c4.8-4.8,4.8-12.5,0-17.3l-129.6-129.5c31.8-35.9,51.2-83,51.2-134.7c0-112.1-91.2-203.2-203.2-203.2
+                       S0,91.15,0,203.25z M381.9,203.25c0,98.5-80.2,178.7-178.7,178.7s-178.7-80.2-178.7-178.7s80.2-178.7,178.7-178.7
+                       S381.9,104.65,381.9,203.25z" />
+                  </g>
+                </g>
+              </svg>
+              <input type="search" placeholder="Discover...">
+            </div>
+            <div class="buttons">
+              <button>···</button>
+              <button class="login-btn">Login</button>
+            </div>
           </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-</body>
+          <div class="bottom-header">
+            <div class="nav-container" id="navContainer">
+              <div class="nav-tag tag-selected">Home</div>
+              <div class="nav-tag">Tech</div>
+              <div class="nav-tag">Games</div>
+              <div class="nav-tag">Podcasts</div>
+              <div class="nav-tag">Bots</div>
+              <div class="nav-tag">Developer Tools</div>
+              <div class="nav-tag">iMessage Apps</div>
+              <div class="nav-tag">Phone</div>
+              <div class="nav-tag">Photography Tools</div>
+              <div class="scroll-buttons">
+                <img src="images/arrow-prev.png" alt="flecha anterior">
+                <img src="images/arrow-next.png" alt="flecha siguiente">
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
 
+
+    <main>
+        <div class="subscribe-section">
+            <div class="subscribe-text">
+                    <div class="flipped-emoji">&#128075;</div>
+                    <strong>Welcome to Product Hunt</strong>
+                     Get the best new products in your inbox, daily.
+            </div>
+            <div class="subscribe-form">
+                <input type="email">
+                <input type="submit" value="SUBSCRIBE">
+            </div>
+            <div class="close-btn-relative">
+                &#10006;
+            </div>
+        </div>
+        
+        <div class="main-content">
+
+            <div class="left-side-lg">
+                <section class="popular-this-week">
+                    <div class="section-header-close-btn">
+                        <h1>Popular this week</h1>
+                        <div class="close-btn-relative">
+                            &#10006;
+                        </div>
+                    </div>
+                    <div class="row-list">
+                        <div class="list-item">
+                            <img width="90px" height="90px" src="images/popular-this-week/app-1.png" alt="Duolingo logo">
+                            <div class="item-data">
+                                <h2>Duolingo Bots</h2>
+                                <p>AI-powered characters to teach language conversation</p>
+                                <div class="item-action-btns">
+                                    <button>LIKE</button>
+                                    <button>COMMENT</button>
+                                </div>
+                                <div class="tag-relative-box">
+                                    <div class="tag">
+                                        IPHONE
+                                    </div>
+                                    <p>+ 2</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <img width="90px" height="90px" src="images/popular-this-week/app-2.png" alt="Tribe logo">
+                            <div class="item-data">
+                                <h2>Tribe 2.0</h2>
+                                <p>Introducing Augmented Messaging<sup>TM</sup></p>
+                                <div class="item-action-btns">
+                                    <button>LIKE</button>
+                                    <button>COMMENT</button>
+                                    <div class="hastag">&nbsp;&nbsp;&#127942; #1 IN TECH</div>
+                                </div>
+                                <div class="tag-relative-box">
+                                    <div class="tag">
+                                        ANDROID
+                                    </div>
+                                    <p>+ 4</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <img width="90px" height="90px" src="images/popular-this-week/app-3.png" alt="Duolingo logo">
+                            <div class="item-data">
+                                <h2>Workplace by Facebook</h2>
+                                <p>Connect everyone in your company and turn ideas into action</p>
+                                <div class="item-action-btns">
+                                    <button>LIKE</button>
+                                    <button>COMMENT</button>
+                                </div>
+                                <div class="tag-relative-box">
+                                    <div class="tag">
+                                        ANDROID
+                                    </div>
+                                    <p>+ 2</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="showmore-bottom-box">
+                            <img src="images/arrow-down.png" alt="Show more">
+                            SHOW MORE
+                        </div>
+                    </div>
+                </section>
+                <section class="today-section">
+                    <div class="section-header-pplr-btn">
+                        <h1>Today</h1>
+                        <div class="pplr-nwst-btn-relative">
+                            <p class="popular-btn">POPULAR</p> | <p class="newest-btn">NEWEST</p>
+                        </div>
+                    </div>
+                    <div class="row-list">
+                        <div class="list-item">
+                            <img width="90px" height="90px" src="images/today/app-1.png" alt="Sprayscape">
+                            <div class="item-data">
+                                <h2>Sprayscape</h2>
+                                <p>A perfectly imperfect VR-ish camera experiment, by Google</p>
+                                <div class="item-action-btns">
+                                    <button>LIKE</button>
+                                    <button>COMMENT</button>
+                                    <div class="hastag">&nbsp;&nbsp;&#127942; #1 IN TECH</div>
+                                </div>
+                                <div class="tag-relative-box">
+                                    <div class="tag">
+                                        ANDROID
+                                    </div>
+                                    <p>+ 3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <img width="90px" height="90px" src="images/today/app-2.png" alt="Gary Vee">
+                            <div class="item-data">
+                                <h2>Ask Gary Vee</h2>
+                                <p>The unofficial Gary Vee persona chatbot on Messenger!</p>
+                                <div class="item-action-btns">
+                                    <button>LIKE</button>
+                                    <button>COMMENT</button>
+                                </div>
+                                <div class="tag-relative-box">
+                                    <div class="tag">
+                                        GET SHIT DONE
+                                    </div>
+                                    <p>+ 1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <img width="90px" height="90px" src="images/today/app-3.png" alt="Electron Wheel">
+                            <div class="item-data">
+                                <h2>The Electron Wheel</h2>
+                                <p>Turn your standard bicycle into an electric bike.</p>
+                                <div class="item-action-btns">
+                                    <button>LIKE</button>
+                                    <button>COMMENT</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <img width="90px" height="90px" src="https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/66cdd434a4b52123cd041340_favicon-96.png" alt="Lattice logo">
+                            <div class="item-data">
+                                <h2>Lattice Revieews</h2>
+                                <p>360 degree feedback and performance reviews</p>
+                                <div class="item-action-btns">
+                                    <button>LIKE</button>
+                                    <button>COMMENT</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="showmore-bottom-box">
+                            <img src="images/arrow-down.png" alt="Show more">
+                            SHOW MORE
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="rigth-side-lg sidebar">
+                <div class="add-kittybot">
+                    <div class="section-header-close-btn">
+                        <h2>Kittybot for Slack.</h2>
+                        <div class="close-btn-relative">
+                            &#10006;
+                        </div>
+                    </div>
+                    <p>A friendly feline that sends you cool new things.</p>
+                    <div class="img-icon-btn">
+                        ADD KITTYBOT TO SLACK
+                    </div>
+                </div>
+                <div class="live-chats">
+                    <div class="chat-list-header">
+                        <h2>UPCOMING LIVE CHATS</h2>
+                    </div>
+                    <div class="chat-list">
+                        <div class="chat-list-item">
+                            <img width="45px" height="45x" src="https://static.vecteezy.com/system/resources/previews/036/280/651/non_2x/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-illustration-vector.jpg" alt="Avatar usuario">
+                            <div class="chat-item-data">
+                                <h4>Adam Besvinick</h4>
+                                <p>VC at Deep Fork Capital</p>
+                                <button>REMIND ME</button>
+                            </div>
+                        </div>
+                        <div class="chat-list-item">
+                            <img width="45px" height="45x" src="https://static.vecteezy.com/system/resources/previews/036/280/651/non_2x/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-illustration-vector.jpg" alt="Avatar usuario">
+                            <div class="chat-item-data">
+                                <h4>Susan David</h4>
+                                <p>Author of Emotionally Guilty</p>
+                                <button>REMIND ME</button>
+                            </div>
+                        </div>
+                        <div class="chat-list-item">
+                            <img width="45px" height="45x" src="https://static.vecteezy.com/system/resources/previews/036/280/651/non_2x/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-illustration-vector.jpg" alt="Avatar usuario">
+                            <div class="chat-item-data">
+                                <h4>Avid Larizadeh Duggan</h4>
+                                <p>General Partner at GV</p>
+                                <button>REMIND ME</button>
+                            </div>
+                        </div>
+                        <div class="chat-list-item">
+                            <img width="45px" height="45x" src="https://static.vecteezy.com/system/resources/previews/036/280/651/non_2x/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-illustration-vector.jpg" alt="Avatar usuario">
+                            <div class="chat-item-data">
+                                <h4>Katerina Markov Schneider</h4>
+                                <p>Founder and CEO of Ritual</p>
+                                <button>REMIND ME</button>
+                            </div>
+                        </div>
+                        <div class="chat-list-item">
+                            <img width="45px" height="45x" src="https://static.vecteezy.com/system/resources/previews/036/280/651/non_2x/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-illustration-vector.jpg" alt="Avatar usuario">
+                            <div class="chat-item-data">
+                                <h4>Jocelyn Glei</h4>
+                                <p>Master of Productivity, founder and author...</p>
+                                <button>REMIND ME</button>
+                            </div>
+                        </div>
+                        <div class="showmore-bottom-box">
+                            SEE MORE
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
 </html>
