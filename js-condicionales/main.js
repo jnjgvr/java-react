@@ -10,4 +10,4 @@ console.log(ejercicio2(2, 3, 5));
 var ejercicio3 = function (nombre, apellido1, apellido2) { return nombre + ' ' + apellido1 + ' ' + apellido2; };
 console.log(ejercicio3('JuanJose', 'Guevara', 'Alvarez'));
 var ejercicio4 = function (value1, value2) { return (value1 < value2) ? value2 : value1; };
-console.log(ejercicio4(2, 4));
+console.log(ejercicio4(8, 4));
