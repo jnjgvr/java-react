@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="main.js"></script>
+</head>
+<body>
+    <main>
+        <div class="add-items-block">
+            <form action="">
+                <fieldset>
+                    <legend>Add Item</legend>
+                    <input type="button" class="push-btn" value="push"></input>
+                    <input type="button" class="unshift-btn" value="unshift"></input>
+                    <input type="button" class="insert-btn" value="insert at"></input>
+                    <input type="number" value="0" max="14" min="0" name="insert-position" id="insert-position">
+                </fieldset>
+            </form>
+        </div>
+        <div class="remove-items-block">
+            <form action="">
+                <fieldset>
+                    <legend>Remove Item</legend>
+                    <input type="button" disabled class="pop-btn" value="pop"></input>
+                    <input type="button" disabled class="shift-btn" value="shift"></input>
+                    <input type="button" disabled class="remove-btn" value="remove at"></input>
+                    <input type="number" value="0" max="14" min="0" name="remove-position" id="remove-position">
+                </fieldset>
+            </form>
+        </div>
+        <div class="array-list">
+            <ul>
+                
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
