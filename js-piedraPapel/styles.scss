@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ffe4c4;
+}
+
+p{
+    font-size: 250px;
+}
+
+.ui-principal{
+    display: flex;
+    justify-content: center;
+
+    h2{
+        color: #f92f60;
+        text-align: center;
+        font-size: 38px;
+    }
+
+    h3{
+        display: none;
+        text-align: center;
+    }
+
+    .winner{
+        color: green;
+    }
+    .looser{
+        color: #a90a32;
+    }
+}
+
+.selecciones-jugador{
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    gap: 20px;
+    padding: 20px 0px;
+
+    >div{
+        border: 1.2px solid #f92f60;
+        background-color: rgb(242, 242, 242);
+        border-radius: 50%;
+        line-height: 50px;
+        transition: transform 0.5s, background-color 0.1s;
+    }
+
+    .piedra:hover, .papel:hover, .tijera:hover{
+        border: 1.6px solid #e8184c;
+        background-color: rgb(215, 215, 215);
+        transform: scale(1.2);
+    }
+
+    .play-again{
+        background-color: #f92f60;
+        color: white;
+        border-radius: 40px;
+        font-size: 24px;
+        padding: 4px 12px;
+        display: none;
+    }
+
+    .play-again:hover{
+        background-color: #e8184c;
+        color: white;
+        border-radius: 40px;
+        padding: 4px 12px;
+        transform: scale(1.15);
+    }
+}
+
+.resultados{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    // background: rgb(255,228,196);
+    // background: linear-gradient(0deg, rgb(188 162 109 / 68%) 0%, rgb(254 207 117 / 68%) 50%, rgb(188 162 109 / 48%) 99%);    padding-top: 20px;
+    padding-bottom: 20px;
+    // border-top: 1px dashed #f92f60;
+
+    h4{
+        color: #f92f60;
+    }
+    .resultado{
+        display: flex;
+        font-size: 28px;
+        line-height: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 8px;
+
+        .resultado-ganador{
+            background: rgb(87,239,83);
+            background: radial-gradient(circle, rgba(39, 225, 33, 0.878) 12%, rgba(255,228,196,1) 100%);
+            border-radius: 50%;
+        }
+        .resultado-perdedor{
+            background: rgb(255,9,9);
+            background: radial-gradient(circle, rgba(255,9,9,0.8780141843971632) 12%, rgba(255,228,196,1) 100%);
+            border-radius: 50%;
+        }
+        .resultado-empate{
+            background: rgb(232, 146, 41);
+            background: radial-gradient(circle, rgba(225, 132, 33, 0.878) 12%, rgba(255,228,196,1) 100%);
+            border-radius: 50%;
+        }
+    }
+}
